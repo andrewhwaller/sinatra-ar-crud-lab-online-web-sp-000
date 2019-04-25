@@ -1,6 +1,6 @@
 <form method="POST" action="/articles/<%= @article.id %>">
   <input id="hidden" type="hidden" name="_method" value="PATCH">
-  <input type="text" id="title" name="title">
+  <input type="text" id="title" name="article[title]" value="<%= @article.title %>" />
   <input type="text" id="content" name="content">
   <input type="submit" value="Submit">
 </form>
