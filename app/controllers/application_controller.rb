@@ -38,4 +38,9 @@ class ApplicationController < Sinatra::Base
   get '/articles/:id/edit' do
     erb :edit
   end
+
+#delete
+  delete '/articles/:id' do
+    
+  end
 end
