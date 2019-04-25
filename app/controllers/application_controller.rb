@@ -19,5 +19,4 @@ class ApplicationController < Sinatra::Base
     Article.new.save
   end
 
-
 end
