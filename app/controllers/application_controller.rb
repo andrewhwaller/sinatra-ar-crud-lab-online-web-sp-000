@@ -33,4 +33,9 @@ class ApplicationController < Sinatra::Base
     @articles = Article.all
     erb :index
   end
+
+#Update
+  get '/articles/:id/edit' do
+    erb :edit
+  end
 end
