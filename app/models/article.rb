@@ -7,4 +7,9 @@ class Article < ActiveRecord::Base
     @title = title
     @content = content
     @@all << self
+  end
+
+  def self.all
+    @@all
+  end
 end
