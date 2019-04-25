@@ -10,27 +10,24 @@ class ApplicationController < Sinatra::Base
 
   get '/' do
   end
-
+#new
   get '/articles/new' do
+    @article = Article.new
     erb :new
   end
-
+ #create
   post '/articles' do
     Article.new.save
     erb :index
   end
-
+#show
   get '/articles/:id' do
+
     erb :show
   end
-
+#index
   get '/articles' do
     @articles = Article.all
     erb :index
   end
-
-  get '/articles' do
-
-  end
-
 end
