@@ -34,7 +34,7 @@ class ApplicationController < Sinatra::Base
     erb :index
   end
 
-#Update
+#edit
   get '/articles/:id/edit' do
     erb :edit
   end
