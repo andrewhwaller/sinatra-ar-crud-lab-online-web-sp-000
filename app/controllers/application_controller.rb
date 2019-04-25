@@ -15,19 +15,19 @@ class ApplicationController < Sinatra::Base
     @article = Article.new
     erb :new
   end
-  
+
  #create
   post '/articles' do
     Article.new.save
     erb :index
   end
-  
+
 #show
   get '/articles/:id' do
     @article = Article.find(params[:id])
     erb :show
   end
-  
+
 #index
   get '/articles' do
     @articles = Article.all
